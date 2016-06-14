@@ -23,11 +23,11 @@ module.exports = {
         loaders: [
             {
                 test: /\.css$/,
-                loaders: ['style', 'css'],
+                loaders: ['style', 'css?localIdentName=[path][name]---[local]'],
             },
             {
                 test: /\.styl$/,
-                loaders: ['style', 'css?modules', 'stylus'],
+                loaders: ['style?sourceMap', 'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]', 'stylus'],
                 include: PATHS.PUBLIC,
             },
             {
@@ -51,6 +51,11 @@ module.exports = {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file',
             },
+            {
+                test: /\.(jpg|png)$/,
+                loader: 'url?limit=25000',
+            },
+
         ],
     },
     plugins: [
