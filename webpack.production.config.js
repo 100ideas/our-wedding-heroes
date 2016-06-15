@@ -62,6 +62,10 @@ module.exports = {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file',
             },
+            {
+                test: /\.(jpg|png)$/,
+                loader: 'url?limit=25000',
+            },            
         ],
     },
     plugins: [
