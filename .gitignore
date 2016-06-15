@@ -31,7 +31,7 @@ node_modules
 .idea
 
 # Build folder (webpack should build in memory)
-build
+build/
 
 # Dist folder
 dist
