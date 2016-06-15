@@ -62,6 +62,10 @@ module.exports = {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file',
             },
+            {
+                test: /\.(jpe?g|png|gif|ico)$/i,
+                loader: "file?name=images/[name].[ext]",
+            },
         ],
     },
     plugins: [

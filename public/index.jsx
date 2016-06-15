@@ -14,6 +14,8 @@ import 'font-awesome/css/font-awesome.css';
 import '@insidersbyte/react-markdown-editor/dist/css/react-markdown-editor.css';
 import './index.styl';
 
+require.context("./images/", true, /\.(jpe?g|png|gif|ico)$/i);
+
 if (process.env.NODE_ENV !== 'production') {
     whyDidYouUpdate(React);
 }

@@ -56,8 +56,8 @@ module.exports = {
                 loader: 'file',
             },
             {
-                test: /\.(jpg|png)$/,
-                loader: 'url?limit=25000',
+                test: /\.(jpe?g|png|gif|ico)$/i,
+                loader: "file?name=images/[name].[ext]",
             },
 
         ],
