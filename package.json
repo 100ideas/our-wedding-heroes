@@ -1,7 +1,7 @@
 {
   "name": "our-wedding-heroes",
   "version": "0.1.0",
-  "description": "Wedding website with gift list",
+  "description": "Wedding website with gift list 1",
   "main": "./server",
   "scripts": {
     "clean": "rimraf dist",
