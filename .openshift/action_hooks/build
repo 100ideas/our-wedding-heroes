@@ -27,9 +27,12 @@ fi
 if [ -f "${OPENSHIFT_REPO_DIR}"/package.json ]; then
    echo "  - Installing dependencies w/ new version of npm ... "
    echo
-   (cd "${OPENSHIFT_REPO_DIR}"; export TMPDIR="/tmp"; npm install -d)
+   (cd "${OPENSHIFT_REPO_DIR}"; export TMPDIR="/tmp"; npm install -dd)
 fi
 
+echo "build: NODE_ENV: ${NODE_ENV}"
+echo "build:  npm run prebuild -dd"
 npm run prebuild
 
+echo "build:  npm run build -dd"
 npm run build
