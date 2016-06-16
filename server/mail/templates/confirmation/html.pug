@@ -16,9 +16,9 @@ block content
         thead
             tr
                 th.text-column Name
-                th.numeric-column Price (£)
+                th.numeric-column Price ($)
                 th.numeric-column Quantity
-                th.numeric-column Total (£)
+                th.numeric-column Total ($)
         tbody
             each gift in giftSet.gifts
                 tr
@@ -28,6 +28,6 @@ block content
                     td.numeric-column #{gift.total}
 
     p
-        strong Total £#{giftSet.total}
+        strong Total $#{giftSet.total}
 
     p #{signature}

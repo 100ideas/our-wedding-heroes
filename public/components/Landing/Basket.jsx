@@ -27,7 +27,7 @@ export default class Basket extends React.Component {
                 </div>
 
                 <div>
-                    £{this.props.total}
+                    ${this.props.total}
                 </div>
 
                 <Link to={BASKET_ROUTE} className="btn btn-success btn-sm">

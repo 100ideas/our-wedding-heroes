@@ -10,7 +10,7 @@ export default function GiftSetTable(props) {
                     <th>Giver Name</th>
                     <th>Giver Email</th>
                     <th>Giver Phone Number</th>
-                    <th>Total (£)</th>
+                    <th>Total ($)</th>
                     <th>Payment Method</th>
                     <th>Date</th>
                     <th>Paid?</th>

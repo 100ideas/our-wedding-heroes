@@ -8,7 +8,7 @@ export default function BasketSummaryTable(props) {
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Price (£)</th>
+                    <th>Price ($)</th>
                     <th>Quantity</th>
                     <th>Remaining</th>
                     <th>Remove</th>

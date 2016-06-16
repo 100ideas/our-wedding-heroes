@@ -8,9 +8,9 @@ export default function GiftTable(props) {
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Price (£)</th>
+                    <th>Price ($)</th>
                     <th>Quantity</th>
-                    <th>Total (£)</th>
+                    <th>Total ($)</th>
                 </tr>
             </thead>
 

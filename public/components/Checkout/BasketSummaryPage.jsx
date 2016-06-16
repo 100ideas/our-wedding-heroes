@@ -41,7 +41,7 @@ export default class BasketSummaryPage extends React.Component {
             content = ( // eslint-disable-line no-extra-parens
                 <div className={css.container}>
                     <h1 className={css.title}>
-                        Subtotal ({this.state.basketCount} items): £{this.state.total}
+                        Subtotal ({this.state.basketCount} items): ${this.state.total}
                     </h1>
 
                     <div className={css.content}>

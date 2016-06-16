@@ -32,7 +32,7 @@ export default class HoneymoonGiftListItemListItem extends React.Component {
 
                 <div className={css.textContainer}>
                     <h3 className={css.name}>{this.props.item.name}</h3>
-                    <h4 className={css.title}>Price: £{this.props.item.price}</h4>
+                    <h4 className={css.title}>Price: ${this.props.item.price}</h4>
                     <h4 className={css.title}>Requested: {this.props.item.requested}</h4>
                     <h4 className={css.title}>Remaining: {this.props.item.remaining}</h4>
                     <p className={css.description}>{this.props.item.description}</p>

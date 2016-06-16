@@ -88,7 +88,7 @@ export default class HoneymoonGiftListItem extends React.Component {
                         </FormGroup>
 
                         <FormGroup>
-                            <ControlLabel>Price (£)</ControlLabel>
+                            <ControlLabel>Price ($)</ControlLabel>
                             <FormControl
                                 name="price"
                                 type="number"

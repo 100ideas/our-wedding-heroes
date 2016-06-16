@@ -119,7 +119,7 @@ export default class GiftSetPage extends React.Component {
 
                         <Col md={4}>
                             <FormGroup>
-                                <ControlLabel>Gift Total (£)</ControlLabel>
+                                <ControlLabel>Gift Total ($)</ControlLabel>
                                 <FormControl.Static>
                                     {this.state.giftSet.total}
                                 </FormControl.Static>

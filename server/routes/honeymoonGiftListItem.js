@@ -37,7 +37,7 @@ module.exports = (app, express) => {
         }))
 
         .post(wrap(function* createHoneymoonGiftItem(req, res) {
-            req.checkBody('imageUrl').isURL();
+            req.checkBody('imageUrl').isURL({require_tld: false});
             req.checkBody('name').notEmpty();
             req.checkBody('description').notEmpty();
             req.checkBody('requested').isInt();
@@ -81,7 +81,7 @@ module.exports = (app, express) => {
 
         .put(wrap(function* updateHoneymoonGiftItem(req, res) {
             req.checkParams('id').equals(req.body._id); // eslint-disable-line no-underscore-dangle
-            req.checkBody('imageUrl').isURL();
+            req.checkBody('imageUrl').isURL({require_tld: false});
             req.checkBody('name').notEmpty();
             req.checkBody('description').notEmpty();
             req.checkBody('requested').isInt();

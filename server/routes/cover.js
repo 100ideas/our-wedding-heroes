@@ -14,7 +14,7 @@ module.exports = (app, express) => {
 
         .put(wrap(function* updateCover(req, res) {
             req.checkBody('title').notEmpty();
-            req.checkBody('imageUrl').isURL();
+            req.checkBody('imageUrl').isURL({require_tld: false});
             req.checkBody('weddingDate').notEmpty();
 
             const errors = req.validationErrors();

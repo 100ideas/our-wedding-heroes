@@ -34,7 +34,7 @@ export default class GiftItem extends React.Component {
         } else {
             button = ( // eslint-disable-line no-extra-parens
                 <Button bsStyle="success" onClick={this.onClick}>
-                    <FontAwesome icon="shopping-basket" /> Add to Basket £ {price}
+                    <FontAwesome icon="shopping-basket" /> Add to Basket $ {price}
                 </Button>
             );
         }

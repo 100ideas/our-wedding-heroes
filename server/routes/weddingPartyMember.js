@@ -21,7 +21,7 @@ module.exports = (app, express) => {
         .post(wrap(function* createWeddingPartyMember(req, res) {
             req.checkBody('name').notEmpty();
             req.checkBody('title').notEmpty();
-            req.checkBody('imageUrl').isURL();
+            req.checkBody('imageUrl').isURL({require_tld: false});
             req.checkBody('description').notEmpty();
 
             const errors = req.validationErrors();
@@ -76,7 +76,7 @@ module.exports = (app, express) => {
             req.checkBody('_id').equals(req.params.weddingPartyMemberId);
             req.checkBody('name').notEmpty();
             req.checkBody('title').notEmpty();
-            req.checkBody('imageUrl').isURL();
+            req.checkBody('imageUrl').isURL({require_tld: false});
             req.checkBody('description').notEmpty();
             req.checkBody('position').isFloat();
 
