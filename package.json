@@ -15,11 +15,7 @@
     "lint": "npm run lint:stylus && npm run lint:js",
     "test": "npm run lint",
     "start": "node ./server/index.js",
-    "start:dev": "nodemon --ignore public ./server/index.js",
-    "dokku": {
-      "predeploy": "NODE_ENV=development npm install",
-      "postdeploy": ""
-    }
+    "start:dev": "nodemon --ignore public ./server/index.js"
   },
   "repository": {
     "type": "git",
