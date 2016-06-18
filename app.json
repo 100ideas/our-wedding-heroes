@@ -1,0 +1,15 @@
+{
+  "name": "barebones nodejs",
+  "description": "A barebones Node.js app using Express 4.",
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "repository": "https://github.com/michaelshobbs/node-js-sample",
+  "scripts": {
+    "dokku": {
+      "predeploy": "touch /app/predeploy.test",
+      "postdeploy": "curl https://some.external.api.service.com/deployment?state=success"
+    }
+  },
+}
