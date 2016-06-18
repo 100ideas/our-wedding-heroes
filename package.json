@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "postinstall": "npm run build",
-    "prebuild": "npm run clean",
+    "prebuild": "npm run clean; npm install --dev",
     "build": "NODE_ENV=production webpack --config webpack.production.config.js --profile --colors",
     "build:progress": "npm run build -- --progress",
     "lint:stylus": "stylint ./public",
@@ -57,7 +57,7 @@
     "react-notification-system": "^0.2.7",
     "react-router": "^2.4.1",
     "recompose": "^0.19.0",
-    "rimraf": "^2.5.2",    
+    "rimraf": "^2.5.2",
     "smoothscroll": "^0.2.2",
     "superagent": "^2.0.0",
     "uuid": "^2.0.2",
