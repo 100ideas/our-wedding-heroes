@@ -8,7 +8,7 @@
   "repository": "https://github.com/michaelshobbs/node-js-sample",
   "scripts": {
     "dokku": {
-      "predeploy": "touch /app/predeploy.test",
+      "predeploy": "NODE_ENV=development npm install",
       "postdeploy": "curl https://some.external.api.service.com/deployment?state=success"
     }
   },
